@@ -1,0 +1,5 @@
+<div class="bind">
+    <input type="text" #inp (input)='out.innerText=inp.value'>
+    <textarea #out></textarea>
+    <button type="reset" (click)="inp.value=out.innerText=''">Clear</button>
+</div>
