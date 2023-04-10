@@ -1,0 +1,43 @@
+/* h1{
+  color: red;
+  background-color: aqua;
+  text-align: center;
+} */
+
+div {
+    border: 1px solid black;
+    width: 90%;
+    border-radius: 10px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+h1 {
+    background-color: burlywood;
+    color: gray;;
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+
+    margin: 5px auto;
+    border-bottom: 2px dashed grey;;
+    border-radius: 10px;
+}
+
+
+table {
+    background-color: azure;
+    border: 1px solid black;
+    width: 80%;
+    max-width: 500px;
+
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+tr,
+th,
+td {
+    border: 1px solid black;
+}

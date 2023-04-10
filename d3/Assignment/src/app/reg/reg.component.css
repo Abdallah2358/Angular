@@ -1,0 +1,53 @@
+/* h1{
+  color: red;
+  background-color: aqua;
+  text-align: center;
+} */
+
+div {
+    border: 1px solid black;
+    width: 90%;
+    max-width: 500px;
+
+    border-radius: 10px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+h1 {
+    background-color: burlywood;
+    color: gray;;
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+
+    margin: 5px auto;
+    border-bottom: 2px dashed grey;;
+    border-radius: 10px;
+}
+
+.form {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: azure;
+}
+
+.form input {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form input[type='button'] {
+    width: 30%;
+}
+
+.form input[type='button']:active {
+    background-color: cornflowerblue;
+    transform: scale(1.2);
+}
