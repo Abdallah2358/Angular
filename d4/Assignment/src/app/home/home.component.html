@@ -1,0 +1,28 @@
+<form [formGroup]="validateForm" (ngSubmit)="add()" class="m-auto col-10 col-md-6  col-lg-4 ">
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input formControlName="name" #name type="text" class="form-control" id="name">
+        <div *ngIf="!ValidName" class="invalid-feedback d-block">
+            Invalid Name min length 2 Characters
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input formControlName="age" #age type="number" class="form-control" id="age">
+        <div *ngIf="!ValidAge" class="invalid-feedback d-block">
+            Age Between 20 and 40
+        </div>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input formControlName="email" #email type="email" class="form-control" id="email">
+        <div *ngIf="!ValidEmail" class="invalid-feedback d-block">
+            Must Be a valid Email Address
+        </div>
+    </div>
+    <button class="d-block w-50 mx-auto btn btn-dark btn-outline-light border border-dark" type="submit">Add</button>
+</form>
+<!-- (click)="add(name.value,age.value,email.value)" -->
